@@ -5,6 +5,16 @@ struct Node
     int data;
     struct Node *next;
 };
+
+void Traversal(struct Node *pointer)
+{
+   
+     while (pointer != NULL)
+    {
+         printf("Elements are %d\n", pointer->data);
+           pointer = pointer->next;
+    }
+}
 int main()
 {
     struct Node *head;
@@ -59,11 +69,13 @@ int main()
     tenth->data = 220;
     tenth->next = NULL;
 
-    struct Node *pointer = head;
-    while (pointer != NULL)
-    {
-        printf("Elements are %d\n", pointer->data);
-        pointer = pointer->next;
-    }
+    // struct Node *pointer = head;
+    // while (pointer != NULL)
+    // {
+    //     printf("Elements are %d\n", pointer->data);
+    //     pointer = pointer->next;
+    // }
+    // return 0;
+    Traversal(head);
     return 0;
 }
