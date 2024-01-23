@@ -8,11 +8,10 @@ struct Node
 
 void Traversal(struct Node *pointer)
 {
-   
-     while (pointer != NULL)
+    while (pointer != NULL)
     {
-         printf("Elements are %d\n", pointer->data);
-           pointer = pointer->next;
+        printf("Elements are %d\n", pointer->data);
+        pointer = pointer->next;
     }
 }
 int main()
